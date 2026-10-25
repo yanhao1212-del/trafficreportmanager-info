@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"><meta name="description" content="TrafficReportManager：供家庭私人使用的本機交通違規檢舉案件管理與指定平台驗證信清理工具。"><title>TrafficReportManager｜交通檢舉案件管理</title><link rel="stylesheet" href="styles.css"></head>
 <body><header><a class="brand" href="index.html">TrafficReportManager</a><nav aria-label="主要導覽"><a href="index.html" aria-current="page">程式介紹</a><a href="privacy.html">隱私權政策</a></nav></header>
-<main><p class="draft" role="note">本機草稿・尚未公開。公開網址、網域及支援聯絡方式須在發布前確認；本頁不是已完成的 OAuth 發布設定。</p>
+<main>
 <p class="eyebrow">家庭私人使用 · WINDOWS 本機工具</p><h1>整理案件通知，<br>保留每一次處理歷程。</h1><p class="lead">TrafficReportManager 協助帳號持有人整理交通違規檢舉受理通知與處理通知，並在核准規則下清理指定平台的過期驗證信。</p>
 <div class="facts"><article class="fact"><h2>案件資料留在本機</h2><p>依完整案件編號與已驗證來源建立通知關聯，同一案件保留多封通知歷史。明確且無矛盾的已舉發結果可自動結案，其餘交由使用者人工查看。</p></article><article class="fact"><h2>驗證信依明確規則清理</h2><p>每天檢查一次；僅對通過寄件來源與固定格式雙重核對、實際收到嚴格超過 2 小時的基隆交通檢舉平台驗證信，移至 Gmail 垃圾桶。</p></article></div>
 <section><h2>為什麼需要 Gmail 授權？</h2><table><caption class="meta">依功能分開授權及儲存本機 Token</caption><tr><th scope="row">案件管理<br><code>gmail.readonly</code></th><td>讀取已授權帳號的相關通知，擷取必要案件欄位，建立本機資料庫、通知歷史及 Excel 報表；不修改郵件。</td></tr><tr><th scope="row">驗證信清理<br><code>gmail.modify</code></th><td>讀取候選驗證信並逐封確認，將符合規則的郵件移至垃圾桶。Google 此權限本身較廣，但程式的郵件寫入操作僅限移至垃圾桶，不寄信、不永久刪信。</td></tr></table></section>
 <section><h2>核對後才處理，不以關鍵字猜測</h2><p>單憑「驗證」或「舉發」等字樣不足以觸發清理。受理通知、案件處理通知、一般郵件、其他網站驗證信、星號郵件及自訂保留標籤郵件均保留。指定驗證格式經使用者核准後，可不受「重要」標記阻擋，其他保護條件仍須通過。</p><p>來源驗證、資料完整性或授權發生異常時，程式停止處理並保留執行紀錄。</p></section>
 <section><h2>使用與資料範圍</h2><p>這是供家庭私人使用的 Windows 本機工具，不是基隆市政府、Google 或其他政府機關提供的官方服務，也不提供對外帳號註冊。這個介紹網站不登入 Gmail、不收取 OAuth 憑證，也不展示真實案件。</p><p>目前案件管理範圍以實際違規日期自 2026 年 1 月 1 日起的案件為主；日期無法確認者另列待確認。使用者的人工決定與來源證據另行保存。</p><p><a href="privacy.html">查看完整隱私權政策 →</a></p></section>
-<section><h2>聯絡與支援</h2><p>私人使用者可直接聯絡程式管理者，並使用 Google OAuth 同意畫面提供的支援電子郵件。公開支援聯絡方式尚待管理者確認，本機草稿不公開私人信箱。</p></section></main>
-<footer>TrafficReportManager · 本機草稿更新日期：2026 年 10 月 22 日<br>此網站僅提供程式介紹及政策說明，不接收案件資料。</footer></body></html>
+<section><h2>聯絡與支援</h2><p>程式管理及隱私權相關問題，請聯絡支援信箱：<a href="mailto:yanhao1212@gmail.com">yanhao1212@gmail.com</a>。請勿寄送驗證碼、OAuth 憑證或完整郵件內容。</p></section></main>
+<footer>TrafficReportManager · 更新日期：2026 年 10 月 25 日<br>此網站僅提供程式介紹及政策說明，不接收案件資料。</footer></body></html>
